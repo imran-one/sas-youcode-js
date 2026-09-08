@@ -17,4 +17,34 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let numbr1=10;
+let numbr2=5;
+let operation = "+";
+let total;
+switch (operation){
+    case "+":
+        total=numbr1+numbr2;
+        console.log(total);
+        break;
+    case "-":
+        total=numbr1-numbr2;
+        console.log(total);
+        break;
+    case "*":
+        total=numbr1*numbr2;
+        console.log(total);
+        break;
+    case "/":
+        if (numbr2!=0) {
+            total=numbr1/numbr2;
+            console.log(total);
+        }else{
+            console.log("le numbre 2 ega");
+        } 
+        
+        break;
+    default :
+        console.log("ERROR");
+        break;
+};
