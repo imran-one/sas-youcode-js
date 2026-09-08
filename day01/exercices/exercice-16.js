@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+let numero = "067919852";
+if(numero.length===10){
+    console.log("Numéro valide");
+}else{
+    console.log("Numéro invalide");
+}
