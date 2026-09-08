@@ -16,7 +16,5 @@
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
 
-let note = 14;
-if (note >= 10){
-    console.log("Réussi");
-}
+let note =10 ;
+note>=10 ?console.log ('reussi') : console.log ('Échoué')  
