@@ -15,4 +15,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+ 
+const name = "YouCode";
+let age = 42;
+console.log(typeof name); //String
+console.log(typeof age);  //Number   
+console.log(typeof true); //Boolean
+console.log(typeof undefined); //undefined
+console.log(typeof null); //object

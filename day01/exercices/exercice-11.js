@@ -17,4 +17,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+let prixDePanier = 350;
+let dépasse = 200;
+let depasse2 = 500;
+if (prixDePanier > dépasse && prixDePanier <=depasse2 ){
+    console.log("Coût final: "+prixDePanier +"MAD, Livraison: Gratuite");
+}else if(prixDePanier>depasse2){
+    prixDePanier -= prixDePanier*0.1;
+    console.log("Coût final: "+prixDePanier +"MAD, Livraison: Gratuite");
+}
