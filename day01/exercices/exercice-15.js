@@ -17,4 +17,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let prixExtrait = "  349.99 MAD  "
+
+let prix = prixExtrait.trim();
+prix= prix.replace(" MAD" , "");
+let article = Number(prix);
+let total= article*2;
+console.log(total);
