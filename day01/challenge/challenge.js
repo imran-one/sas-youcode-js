@@ -4,7 +4,7 @@
  * LE SIMULATEUR DE PRÊT BANCAIRE
  * ─────────────────────────────────────────────────────────────
  *
- * 🏆 MISSION
+ * 🏆 MISSION   
  * Vous allez coder le cœur logique d'une application de crédit bancaire.
  *
  * Consignes :
@@ -21,4 +21,20 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+let montantEmprunte = 80000;
+let dureeEnMois = 24;
+let revenuMensuel = 20000;
+let mpac = revenuMensuel*0.3;
+let mppm = montantEmprunte/dureeEnMois;
+
+if (mppm <= mpac ){
+    console.log("Prêt accordé. Mensualité : "+montantEmprunte+" MAD");
+    
+}else if (revenuMensuel>10000){
+    console.log("Prêt refusé; Pour que votre demande de prêt soit accordé, nous vous suggérons d'allonger la période de remboursement.");
+    
+}else{
+    console.log("Prêt refusé");
+    
+}
