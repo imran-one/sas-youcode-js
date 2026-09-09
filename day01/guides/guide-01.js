@@ -10,3 +10,13 @@
 'use strict';
 
 // TODO: écris ta solution ici.
+let a= 5;
+let b=10;
+let c;
+
+c=a;
+a=b;
+b=c;
+console.log(a);
+console.log(b);
+
