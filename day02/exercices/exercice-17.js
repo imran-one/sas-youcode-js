@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+let totalItems = 45
+let page = 1
+let items = 10
+let itemss = totalItems
+while (itemss>0) {
+    if (itemss<items) {
+        items = itemss
+    }
+    console.log("Scraping page" +page+" ("+items+" items)");
+    itemss -= items
+    page ++
+}
