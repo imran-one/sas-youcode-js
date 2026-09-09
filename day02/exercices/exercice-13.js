@@ -19,9 +19,10 @@
 let f = 0;
 let f2 = 1;
 let ft = 0;
+
 for(let i = 0 ; i<10;i++){
+    console.log(f);
     ft = f2 + f 
-    console.log(ft);
     f = f2
     f2 = ft 
     
