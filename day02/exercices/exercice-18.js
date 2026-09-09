@@ -17,4 +17,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let n = 15;
+let c = 0;
+
+while (n !== 1) {
+    if (n % 2 == 0) {
+        n = n / 2;
+    } else {
+        n = n * 3 + 1;
+    }
+
+    c++;
+}
+
+console.log("Nombre d'étapes :", c);
+
