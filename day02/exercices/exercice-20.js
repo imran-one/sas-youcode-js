@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+for (let n = 100; n <= 999; n++) {
+    let a = parseInt(n / 100);
+    let b = parseInt(n / 10) % 10;
+    let c = n % 10;
+
+    if (a ** 3 + b ** 3 + c ** 3 == n) {
+        console.log(n);
+    }
+}
