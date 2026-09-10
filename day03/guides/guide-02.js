@@ -9,4 +9,13 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+
+function maFonction() {
+    let monMessage = "Bonjour!";
+    return monMessage
+}
+
+maFonction();
+
+
+console.log(monMessage);   //Erreur
