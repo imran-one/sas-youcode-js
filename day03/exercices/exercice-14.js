@@ -14,4 +14,41 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+function additionner(a, b) {
+    return a + b;
+}
+
+function soustraire(a, b) {
+    return a - b;
+}
+
+function multiplier(a, b) {
+    return a * b;
+}
+
+function diviser(a, b) {
+    if (b === 0) {
+        return "Erreur: Division par zéro!";
+    }
+    return a / b;
+}
+
+function calculatrice(a, b, signe) {
+    switch (signe) {
+        case '+':
+            return additionner(a, b);
+        case '-':
+            return soustraire(a, b);
+        case '*':
+            return multiplier(a, b);
+        case '/':
+            return diviser(a, b);
+        default:
+            return "Opérateur invalide!";
+    }
+}
+
+console.log(calculatrice(5,6,"*"));
+
