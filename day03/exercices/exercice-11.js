@@ -14,4 +14,20 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+
+function calculerFactorielle(n) {
+    if (n == 0) return 1
+    let j = n
+
+    for (let i = n - 1; i > 0; i--) {
+        j *= i;
+    }
+    return j
+}
+console.log(calculerFactorielle(0))
+
+
+
+

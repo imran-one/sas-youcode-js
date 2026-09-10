@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+function trouverMax(a, b, c){
+    if (a>b&&a>c){
+        console.log("le numbre plus grand des trois nombres : "+a);
+        
+    }else if (b>a&&b>c){
+        console.log("le numbre plus grand des trois nombres : "+b);
+        
+    }else {
+        console.log("le numbre plus grand des trois nombres : "+c );
+        
+    }
+}
+trouverMax(5, 8, 6)

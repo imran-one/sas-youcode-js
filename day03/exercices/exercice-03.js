@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function madToEur(mad) {
+    mad  /= 10.8
+    return mad
+}
+console.log(madToEur(100));
