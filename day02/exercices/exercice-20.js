@@ -15,8 +15,7 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-
-for (let n = 100; n <= 999; n++) {
+/*for (let n = 100; n <= 999; n++) {
     let a = parseInt(n / 100);
     let b = parseInt(n / 10) % 10;
     let c = n % 10;
@@ -24,4 +23,15 @@ for (let n = 100; n <= 999; n++) {
     if (a ** 3 + b ** 3 + c ** 3 == n) {
         console.log(n);
     }
+}*/
+
+for (let n = 100; n <= 999; n++) {
+    let a = (n - n % 100) / 100;          // 153 - 53 = 100/100 = 1
+    let b = (n % 100 - n % 10) / 10;      // 53 - 3 = 50/10 = 5
+    let c = n % 10;                   // 3
+
+    if (a ** 3 + b ** 3 + c ** 3 == n) {  // powe in js ==> ' ** '
+        console.log(n);
+    }
 }
+
