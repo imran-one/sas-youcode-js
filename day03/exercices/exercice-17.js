@@ -16,3 +16,16 @@
 // 2. Écris ta solution sous cette ligne.
 
 
+function extrairePrixEtConvertir(chaineBrute){
+    let str = chaineBrute.trim()    // string.trim() ==>> clear spaces
+    let nb = ""
+    
+    for (let i = 0;  i < chaineBrute.length; i++) {
+        if (str[i] >=0 && str[i] <=9|| str[i] =='.') {
+            nb += str[i]
+        }
+        
+    }
+    return Number(nb)
+}
+console.log(extrairePrixEtConvertir("   Prix: 15.99 $  "));

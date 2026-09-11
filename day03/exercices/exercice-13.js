@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Écrivez une fonction genererMotDePasse(longueur) qui génère et retourne une chaîne aléatoire contenant X fois la lettre "A" ou un chiffre aléatoire. (Utilisez Math.random()).
+ * Écrivez une fonction genererMotDePasse(longueur) qui génère
+ *  et retourne une chaîne aléatoire contenant X fois la lettre "A" ou un chiffre aléatoire. (Utilisez Math.random()).
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-13
  * ▶️ Commande : node day03/exercices/exercice-13.js
@@ -15,3 +16,24 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
+function genererMotDePasse(longueur){
+
+    let s = ""
+    for (let i = 0; i < longueur; i++){
+        let X=Math.random()*10;
+        let f = Math.round(X)
+        let x = Math.random()*10
+        if (f>9){
+            f -= 1
+        }
+        if (x>=5 && x<10){
+            f= 'A'
+        }
+        s += f
+        
+    }
+    
+    return s
+}
+
+console.log(genererMotDePasse(5))
