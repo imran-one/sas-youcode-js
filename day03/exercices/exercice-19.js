@@ -20,3 +20,4 @@ function alarme(message, secondes) {
     }, secondes * 1000);
 }
 
+alarme("hy ", 3)
