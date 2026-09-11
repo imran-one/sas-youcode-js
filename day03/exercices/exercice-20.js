@@ -18,3 +18,21 @@
 // 2. Écris ta solution sous cette ligne.
 
 
+let a = null;
+let b = null;
+
+function calculLong(n) {
+    if (n === a) {
+        return b;
+    }
+
+    let resultat = n * 2; 
+    a = n;
+    b = resultat;
+
+    return resultat;
+}
+
+console.log(calculLong(5));
+console.log(calculLong(5));
+console.log(calculLong(8));
