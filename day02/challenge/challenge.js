@@ -21,4 +21,19 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+
+let codeSecret = 739
+let t = null
+let cempteur = null
+
+for (let i = 0; i <= 9; i++) {
+    for (let j = 0; j <= 9; j++) {
+        for (let k = 0; k <= 9; k++) {
+            cempteur++
+            t = i*100+j*10+k
+            if (t == codeSecret)  return console.log("Code trouvé : 739 après "+cempteur+" essais")
+        }
+
+    }
+}
