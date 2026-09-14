@@ -28,16 +28,6 @@ function ajouterAuPanier(id){
    return panier
 }
 
-/*function retirerDuPanier(id){
-    *let p = []
-    for (let m of panier){
-      if (m !== id){
-        p.push(m)
-      }
-    }
-    
-    return p
-}*/
 
 function retirerDuPanier(id){
     for (let i =0 ; i <panier.length-1; i++){
@@ -54,8 +44,14 @@ function afficherQuantites(tabl) {
     for (let element of tabl) {
         quantites[element] = (quantites[element] || 0) + 1;
     }
+    let lignes = [];
+  for (let articl in quantites) {
+    let qte = quantites[articl];
+    let texteExemplaire = qte > 1 ? "exemplaires" : "exemplaire";
+    lignes.push(`Article ${articl} : ${qte} ${texteExemplaire}`);
+  }
 
-    return quantites;
+    return lignes;
 }
 
 
