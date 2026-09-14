@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function prendemail(tab){
+    let v = tab.indexOf('@')
+    let tab1 = tab.slice(v+1)
+    return tab1
+}
+console.log(prendemail("contact@youcode.ma"));

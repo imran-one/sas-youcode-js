@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tab = "   utilisateur@email.com   "
+
+let tab2 = tab.trim()
+console.log(tab2);
+
+

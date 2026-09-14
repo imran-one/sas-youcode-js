@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function checkemail(email){
+    return email.includes('@')
+
+}
+console.log(checkemail("imran@gmale"));
+console.log(checkemail("imran2gmale"));
