@@ -12,3 +12,9 @@
 let mot = "javascript"
 let phrase = "J'apprends le JavaScript à YouCode"
 
+phrase = phrase.toUpperCase()
+mot = mot.toUpperCase()
+
+console.log(phrase.includes(mot));
+
+
