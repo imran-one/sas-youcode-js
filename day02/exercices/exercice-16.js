@@ -20,11 +20,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
 
-for (let i = 5; i > 0; i--) {
+for (let i = 1; i<=5 ;i++ ){
+  for (let  j=5; j>=i ;j--){
+    process.stdout.write(" ")
+  }
+  for(let s=i;s<=5-i;)
+  console.log("*")
+}
+
+
+/*for (let i = 5; i > 0; i--) {
     let e = ' '.repeat(i)
     console.log(e+"*");
     
-}
+}*/
 

@@ -19,4 +19,47 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+
+let panier = [101, 105, 101, 102]
+
+function ajouterAuPanier(id){
+    panier.push(id);
+   return panier
+}
+
+/*function retirerDuPanier(id){
+    *let p = []
+    for (let m of panier){
+      if (m !== id){
+        p.push(m)
+      }
+    }
+    
+    return p
+}*/
+
+function retirerDuPanier(id){
+    for (let i =0 ; i <panier.length-1; i++){
+        if (panier[i]== id){
+          panier.splice(i,1)
+        }
+    }
+  return panier
+}
+
+function afficherQuantites(tabl) {
+    let quantites = {}
+
+    for (let element of tabl) {
+        quantites[element] = (quantites[element] || 0) + 1;
+    }
+
+    return quantites;
+}
+
+
+console.log(ajouterAuPanier(107));
+
+console.log(afficherQuantites(panier));
+ console.log(retirerDuPanier(101))
