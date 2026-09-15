@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function compteur(texte){
+    let c = 0
+    for (let i =0 ; i <texte.length; i++){
+        if (texte[i] =='e' || texte[i]=='E'){
+            c++
+        }
+    }
+    return c
+}
+console.log(compteur("hello word Et e E "));
