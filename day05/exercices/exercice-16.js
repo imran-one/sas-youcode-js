@@ -14,4 +14,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+  let tweet = "Beau temps à #Nador aujourd'hui avec la team #YouCode !"
+  let  nweTweet = tweet.split(" ")
+  let x = []
+  for (let i =0; i <=nweTweet.length; i++){
+    if(nweTweet.length[i][0] == )
+
+  }

@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Comptez le nombre de mots dans une longue chaîne. *Attention aux espaces multiples !* (Un mot est généralement séparé par un espace).
+ * Comptez le nombre de mots dans une longue chaîne. *Attention aux espaces multiples !* 
+ * (Un mot est généralement séparé par un espace).
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
  * ▶️ Commande : node day05/exercices/exercice-14.js
@@ -14,4 +15,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let chaîne= "alis kara    para    farmaci"
+
+let v = chaîne.split(/\s+/)
+console.log(v.length);
+
