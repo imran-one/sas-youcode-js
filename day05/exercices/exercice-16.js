@@ -15,10 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 
-  let tweet = "Beau temps à #Nador aujourd'hui avec la team #YouCode !"
-  let  nweTweet = tweet.split(" ")
-  let x = []
-  for (let i =0; i <=nweTweet.length; i++){
-    if(nweTweet.length[i][0] == )
-
+let tweet = "Beau temps à #Nador aujourd'hui avec la team #YouCode !"
+let newTweet = tweet.split(" ")
+let x = []
+for (let i = 0; i < newTweet.length; i++) {
+  if (newTweet[i][0] == '#') {
+    x += newTweet[i]
   }
+
+}
+console.log(x)
