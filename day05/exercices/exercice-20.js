@@ -16,4 +16,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let texte =  "Les 10 secrets de JavaScript !"
+
+texte = texte.replace(/[^\w\s]/g,"")
+texte = texte.trim()
+texte = texte.toLowerCase()
+texte = texte.replace(/\s/g,"-")
+console.log(texte);
+
