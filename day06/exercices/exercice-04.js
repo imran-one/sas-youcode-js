@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction possedePropriete(obj, cle) qui retourne true si la clé existe dans l'objet, sinon false. *(Indice : vous pouvez utiliser l'opérateur in ou vérifier si c'est !== undefined)*.
+ * Créez une fonction possedePropriete(obj, cle) qui retourne true si la clé existe dans l'objet,
+ *  sinon false. *(Indice : vous pouvez utiliser l'opérateur in ou vérifier si c'est !== undefined)*.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-04
  * ▶️ Commande : node day06/exercices/exercice-04.js
@@ -14,4 +15,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function possedePropriete(obj, cle) {
+  return cle in obj;
+}
+const utilisateur = {
+  nom: "Ali",
+  age: 25,
+  email: "ali@email.com"
+};
+console.log(possedePropriete(utilisateur, "nom")); 
+console.log(possedePropriete(utilisateur, "estAdmin")); 

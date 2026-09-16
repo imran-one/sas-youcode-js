@@ -14,4 +14,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let livres = [
+  { titre: "Le Petit Prince", auteur: "Antoine de Saint-Exupéry" },
+  { titre: "1984", auteur: "George Orwell" },
+  { titre: "To Kill a Mockingbird", auteur: "Harper Lee" }
+];
+console.log(livres[1].titre);

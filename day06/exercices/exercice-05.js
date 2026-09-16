@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Utilisez Object.keys() sur votre objet utilisateur pour récupérer un tableau contenant toutes ses clés, et affichez sa longueur.
+ * Utilisez Object.keys() sur votre objet utilisateur pour récupérer un tableau contenant toutes ses clés,
+ *  et affichez sa longueur.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-05
  * ▶️ Commande : node day06/exercices/exercice-05.js
@@ -14,4 +15,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let utilisateur = {
+  nom: "Ali",
+  age: 25,
+  estAdmin: true
+};
+let keys = Object.keys(utilisateur);
+console.log(keys.length);
