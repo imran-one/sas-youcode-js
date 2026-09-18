@@ -26,10 +26,12 @@ let topScore = candidats[0].score
 
 for(let i=1;i<candidats.length;i++){ 
     if(topScore<candidats[i].score){ 
-        topScore=candidats[i].score
+        topScore = candidats[i].score
     }
+}
+let top = candidats.find(candida => candida.score === topScore)
  }
- console.log(topScore)
+ console.log(top)
 
 
  
